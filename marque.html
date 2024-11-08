@@ -1,0 +1,970 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Solved - Transforming Ideas into Solutions</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://api.fontshare.com/v2/css?f[]=satoshi@900,700,500,400&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./assets/style.css">
+</head>
+
+<body class="overflow-x-hidden">
+  <!-- Mobile Menu -->
+  <div id="mobileMenu" class="mobile-menu">
+    <div class="flex justify-between items-center mb-8">
+      <a href="/" class="text-2xl font-bold text-teal-500">✓solved</a>
+      <button id="closeMenu" class="text-2xl p-2">×</button>
+    </div>
+    <div class="flex flex-col space-y-4">
+      <a href="#" class="text-black hover:text-gray-900 py-2">About Us</a>
+      <a href="#" class="text-black hover:text-gray-900 py-2">Services</a>
+      <div class="relative">
+        <button id="mobileProdBtn" class="text-black hover:text-gray-900 py-2 w-full text-left">
+          Products ▼
+        </button>
+        <div id="mobileProdMenu" class="hidden pl-4 space-y-2 mt-2">
+          <a href="#" class="block py-2 text-gray-700">Web Development</a>
+          <a href="#" class="block py-2 text-gray-700">Mobile Apps</a>
+          <a href="#" class="block py-2 text-gray-700">Blockchain Solutions</a>
+          <a href="#" class="block py-2 text-gray-700">AI & Machine Learning</a>
+        </div>
+      </div>
+      <div class="relative">
+        <button id="mobileLangBtn" class="text-black hover:text-gray-900 py-2 w-full text-left">
+          Language: EN ▼
+        </button>
+        <div id="mobileLangMenu" class="hidden pl-4 space-y-2 mt-2">
+          <button class="block py-2 text-gray-700 w-full text-left">English</button>
+          <button class="block py-2 text-gray-700 w-full text-left">Español</button>
+          <button class="block py-2 text-gray-700 w-full text-left">Français</button>
+          <button class="block py-2 text-gray-700 w-full text-left">Deutsch</button>
+          <button class="block py-2 text-gray-700 w-full text-left">中文</button>
+        </div>
+      </div>
+      <button class="bg-[#00A79D] text-white px-6 py-2  hover:bg-teal-600 w-full">
+        Contact Us
+      </button>
+    </div>
+  </div>
+
+  <!-- Navigation -->
+  <nav class="container mx-auto px-4 xl:px-20 lg:px-10 md:px-8 py-4 flex justify-between items-center">
+    <div class="flex items-center">
+      <a href="/" class="text-2xl font-bold text-teal-500">✓solved</a>
+    </div>
+    <div class="hidden md:flex space-x-6">
+      <a href="#" class="text-black hover:text-gray-900">About Us</a>
+      <a href="#" class="text-black hover:text-gray-900">Services</a>
+      <div class="relative group">
+        <button id="dropdownBtn" class="text-black hover:text-gray-900">Products ▼</button>
+        <div id="dropdownMenu" class="dropdown-menu">
+          <a href="#" class="block px-4 py-2 text-gray-700 hover:bg-gray-100">Web Development</a>
+          <a href="#" class="block px-4 py-2 text-gray-700 hover:bg-gray-100">Mobile Apps</a>
+          <a href="#" class="block px-4 py-2 text-gray-700 hover:bg-gray-100">Blockchain Solutions</a>
+          <a href="#" class="block px-4 py-2 text-gray-700 hover:bg-gray-100">AI & Machine Learning</a>
+        </div>
+      </div>
+    </div>
+    <div class="flex items-center space-x-4">
+      <div class="relative hidden md:block">
+        <button id="langBtn" class="text-gray-600">EN ▼</button>
+        <div id="langMenu" class="lang-dropdown-menu">
+          <button class="block w-full text-left px-4 py-2 text-gray-700 hover:bg-gray-100">English</button>
+          <button class="block w-full text-left px-4 py-2 text-gray-700 hover:bg-gray-100">Español</button>
+          <button class="block w-full text-left px-4 py-2 text-gray-700 hover:bg-gray-100">Français</button>
+          <button class="block w-full text-left px-4 py-2 text-gray-700 hover:bg-gray-100">Deutsch</button>
+          <button class="block w-full text-left px-4 py-2 text-gray-700 hover:bg-gray-100">中文</button>
+        </div>
+      </div>
+      <button class="bg-[#00A79D] text-white px-6 py-2  hover:bg-teal-600 hidden md:block">
+        Contact Us
+      </button>
+      <button id="menuBtn" class="text-gray-600 md:hidden">☰</button>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <div class="container mx-auto px-4 xl:px-20 lg:px-10 md:px-8 py-8 md:py-24">
+    <div class="flex flex-col md:flex-row items-center">
+      <div class="w-full md:w-1/2 mb-8 md:mb-0">
+        <h1 class="text-4xl md:text-6xl font-bold leading-tight mb-6">
+          Transforming Ideas into Innovative Solutions for You
+        </h1>
+        <p class="text-gray-600 mb-8 max-w-lg">
+          Solved is a leading software IT company with over 20 years of experience in building applications,
+          mobile development, Web3, Blockchain, and AI projects. We specialize in working with startups,
+          helping them turn their ideas into successful ventures. Our team of experts is dedicated to
+          delivering innovative solutions tailored to your unique needs.
+        </p>
+        <div class="flex flex-col sm:flex-row space-y-4 sm:space-y-0 sm:space-x-4">
+          <button
+            class="bg-[#00A79D] text-white px-8 py-3 text-lg font-medium hover:bg-teal-600 w-full sm:w-auto text-center">
+            Learn More
+          </button>
+          <button
+            class="border border-gray-300 px-8 py-3 text-lg font-medium hover:bg-gray-50 w-full sm:w-auto text-center">
+            Sign Up
+          </button>
+        </div>
+      </div>
+      <div class="w-full md:w-1/2">
+        <div class="relative">
+          <div class="w-full h-64 md:h-[700px] bg-contain bg-no-repeat bg-center"
+            style="clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%, 50% 50%);">
+            <img src="./assets/images/s1.png" alt="Office workers at computers" class="w-full object-cover">
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <section class="bg-white">
+    <div class="container mx-auto px-4 xl:px-20 lg:px-10 md:px-8">
+      <div class="flex flex-col lg:flex-row gap-12">
+        <!-- Left Column -->
+        <div class="lg:w-1/2 md:pt-20 pt-10">
+          <div class="inline-block px-4 py-1 bg-[#00A74F] text-white font-medium rounded-full text-sm mb-6">
+            EXPERTIZE
+          </div>
+          <h2 class="text-3xl md:text-4xl lg:text-5xl font-bold mb-6">
+            Building Innovative Applications and Mobile Solutions
+          </h2>
+          <p class="text-gray-600 mb-8 max-w-lg">
+            At Solved, we specialize in application and mobile development, leveraging our 20 years of
+            experience to build innovative solutions that meet the unique needs of our clients. Our team of
+            experts is dedicated to delivering high-quality software products that drive business growth and
+            success.
+          </p>
+          <div class="flex flex-wrap gap-4">
+            <button class="bg-[#00A79D] text-white px-6 py-2 text-lg  hover:bg-teal-600">
+              Learn More
+            </button>
+            <button
+              class="border border-gray-300 px-8 py-3 flex text-lg font-medium justify-center items-center gap-3  hover:bg-gray-50 w-full sm:w-auto text-center">
+              Contact Us
+              <svg class="w-4 h-4" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                <path d="M5 12h14m-7-7l7 7-7 7" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+              </svg>
+            </button>
+          </div>
+        </div>
+
+        <!-- Right Column - Cards -->
+        <div class="lg:w-1/2">
+          <div class="bg-[#F0F7F7] p-4 xl:p-20 lg:p-10 md:p-8">
+            <div class="grid gap-6">
+              <!-- Expert Team Card -->
+              <div class="bg-white p-6 shadow-sm">
+                <div class="mb-4 lg:mb-20 md:mb-10">
+                  <div class="w-20 h-20 bg-[#00A79D] flex items-center justify-center">
+                    <svg class="md:w-12 md:h-12 w-8 h-8  text-white" viewBox="0 0 24 24" fill="none"
+                      stroke="currentColor">
+                      <path
+                        d="M20 7h-3m3 0v3m0-3l-3 3M4 17h3m-3 0v-3m0 3l3-3M20 17h-3m3 0v-3m0 3l-3-3M4 7h3M4 7v3m0-3l3 3"
+                        stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                    </svg>
+                  </div>
+                </div>
+                <h3 class="text-xl lg:text-2xl font-bold mb-2">Expert Team</h3>
+                <p class="text-gray-600 text-lg ">
+                  Our team of skilled professionals is committed to delivering exceptional software
+                  solutions.
+                </p>
+              </div>
+
+              <!-- Experience Card -->
+              <div class="bg-white p-6 shadow-sm">
+                <div class="mb-4 lg:mb-20 md:mb-10">
+                  <div class="w-20 h-20 bg-[#00A79D] flex items-center justify-center">
+                    <svg class="md:w-12 md:h-12 w-8 h-8  text-white" viewBox="0 0 24 24" fill="none"
+                      stroke="currentColor">
+                      <path d="M12 6v6l4 2M12 22c5.523 0 10-4.477 10-10S17.523 2 12 2 2 6.477 2 12s4.477 10 10 10z"
+                        stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                    </svg>
+                  </div>
+                </div>
+                <h3 class="text-xl lg:text-2xl font-bold mb-2">Experience</h3>
+                <p class="text-gray-600 text-lg ">
+                  Over 20 years of building cutting-edge applications and mobile solutions for clients
+                  worldwide.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="bg-white">
+    <div class="container mx-auto px-4 xl:px-20 lg:px-10 md:px-8">
+      <div class="flex flex-col lg:flex-row gap-12">
+        <div class="lg:w-1/2 md:pt-20 pt-10">
+          <div class="inline-block px-4 py-1 bg-[#00A74F] text-white font-medium rounded-full text-sm mb-6">
+            Expertize
+          </div>
+          <h2 class="text-3xl md:text-4xl lg:text-5xl font-bold mb-6">
+            Unlocking the Potential of Web3, Blockchain, and AI Projects
+          </h2>
+          <p class="text-gray-600 mb-8 max-w-lg">
+            With over 20 years of experience, Solved specializes in building innovative applications, mobile
+            development, and cutting-edge projects in Web3, Blockchain, and AI.
+          </p>
+        </div>
+        <div class="lg:w-1/2">
+          <div class="bg-[#F0F7F7] p-4 xl:p-20 lg:p-10 md:p-8">
+            <div class="grid gap-6">
+              <!-- Web3 Expert Card -->
+              <div class="bg-white p-6 shadow-sm">
+                <div class="mb-4 lg:mb-20 md:mb-10">
+                  <div class="w-20 h-20 bg-orange-500 flex items-center justify-center">
+                    <svg class="md:w-12 md:h-12 w-8 h-8  text-white" viewBox="0 0 24 24" fill="none"
+                      stroke="currentColor">
+                      <path d="M20 7L12 3L4 7M20 7L12 11M20 7V17L12 21M12 11L4 7M12 11V21M4 7V17L12 21" stroke-width="2"
+                        stroke-linecap="round" stroke-linejoin="round" />
+                    </svg>
+                  </div>
+                </div>
+                <h3 class="text-xl lg:text-2xl font-bold mb-2">Web3 Expert</h3>
+                <p class="text-gray-600">We have successfully delivered numerous Web3, Blockchain, and
+                  AI projects for our clients.</p>
+              </div>
+              <!-- Expertise Card -->
+              <div class="bg-white p-6 shadow-sm">
+                <div class="mb-4 lg:mb-20 md:mb-10">
+                  <div class="w-20 h-20 bg-purple-500 flex items-center justify-center">
+                    <svg class="md:w-12 md:h-12 w-8 h-8  text-white" viewBox="0 0 24 24" fill="none"
+                      stroke="currentColor">
+                      <path
+                        d="M12 6V12L16 14M12 2C6.47715 2 2 6.47715 2 12C2 17.5228 6.47715 22 12 22C17.5228 22 22 17.5228 22 12C22 6.47715 17.5228 2 12 2Z"
+                        stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                    </svg>
+                  </div>
+                </div>
+                <h3 class="text-xl lg:text-2xl font-bold mb-2">Expertise</h3>
+                <p class="text-gray-600">Our team of skilled professionals is well-versed in the latest
+                  technologies and industry trends.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Startup Section -->
+  <section class="bg-white">
+    <div class="container mx-auto px-4 xl:px-20 lg:px-10 md:px-8">
+      <div class="flex flex-col lg:flex-row gap-12">
+        <div class="lg:w-1/2 md:pt-20 pt-10">
+          <div class="inline-block px-4 py-1 bg-[#00A74F] text-white font-medium rounded-full text-sm mb-6">
+            Expertize
+          </div>
+          <h2 class="text-3xl md:text-4xl lg:text-5xl font-bold mb-6">
+            Unlock Your Startup's Potential with Our Expertise and Innovation
+          </h2>
+          <p class="text-gray-600 mb-8 max-w-lg">
+            At Solved, we specialize in startups and have over 20 years of experience in building
+            applications, mobile development, Web3, Blockchain, and AI. Our dedicated team combines industry
+            knowledge and cutting-edge solutions to help you drive forward in today's competitive market.
+          </p>
+        </div>
+        <div class="lg:w-1/2">
+          <div class="bg-[#F0F7F7] p-4 xl:p-20 lg:p-10 md:p-8">
+            <div class="grid gap-6">
+              <!-- SEO Expert Card -->
+              <div class="bg-white p-6 shadow-sm">
+                <div class="mb-4 lg:mb-20 md:mb-10">
+                  <div class="w-20 h-20 bg-[#00A79D] flex items-center justify-center">
+                    <svg class="md:w-12 md:h-12 w-8 h-8  text-white" viewBox="0 0 24 24" fill="none"
+                      stroke="currentColor">
+                      <path
+                        d="M15 15L21 21M10 17C6.13401 17 3 13.866 3 10C3 6.13401 6.13401 3 10 3C13.866 3 17 6.13401 17 10C17 13.866 13.866 17 10 17Z"
+                        stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                    </svg>
+                  </div>
+                </div>
+                <h3 class="text-xl lg:text-2xl font-bold mb-2">SEO Expert</h3>
+                <p class="text-gray-600">We have successfully delivered numerous Web3, Blockchain, and
+                  AI projects for our clients.</p>
+              </div>
+              <!-- High Conversion Rate Card -->
+              <div class="bg-white p-6 shadow-sm">
+                <div class="mb-4 lg:mb-20 md:mb-10">
+                  <div class="w-20 h-20 bg-green-500 flex items-center justify-center">
+                    <svg class="md:w-12 md:h-12 w-8 h-8  text-white" viewBox="0 0 24 24" fill="none"
+                      stroke="currentColor">
+                      <path d="M3 21L12 3L21 21H3Z" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                    </svg>
+                  </div>
+                </div>
+                <h3 class="text-xl lg:text-2xl font-bold mb-2">High Conversion Rate</h3>
+                <p class="text-gray-600">Our team of skilled professionals is well-versed in the latest
+                  technologies and industry trends.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="bg-teal-700 text-white py-20">
+    <div class="container mx-auto px-4 xl:px-20 lg:px-10 md:px-8">
+      <!-- Header -->
+      <div class="text-center mb-16">
+        <div class="inline-block px-4 py-1 bg-white text-[#42543D] rounded-full text-lg mb-6">
+          Services
+        </div>
+        <h2 class="text-3xl md:text-4xl lg:text-5xl font-bold font-bold mb-6">
+          Our Wide Range of Services
+        </h2>
+        <p class="text-teal-100 max-w-2xl mx-auto mb-8">
+          At Solved we offer a comprehensive suite of software development solutions to help businesses thrive
+          in the digital age. From application development to Web3, AI, BlockChain, and AI integration - we're
+          here to boost your online presence.
+        </p>
+        <div class="flex justify-center gap-4">
+          <button
+            class="bg-[#00A79D] hover:bg-teal-600 text-white px-8 font-medium text-lg py-3 transition duration-300">
+            Learn More
+          </button>
+          <button
+            class="border border-white hover:bg-teal-600 text-white px-8 font-medium text-lg py-3 transition duration-300 flex items-center gap-2">
+            Contact Us
+            <svg class="w-4 h-4" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+              <path d="M5 12h14m-7-7l7 7-7 7" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+            </svg>
+          </button>
+        </div>
+      </div>
+
+      <!-- Service Cards -->
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-8 md:gap-12 mt-12">
+        <!-- Card 1 -->
+        <div>
+          <div
+            class="w-12 md:w-20 h-12 md:h-20 bg-[#FFFFFF1A] border border-gray-400 flex items-center justify-center lg:mb-20 md:mb-10 mb-6">
+            <svg class="w-12 h-12 text-white" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+              <path d="M20 7L12 3L4 7M20 7L12 11M20 7V17L12 21M12 11L4 7M12 11V21M4 7V17L12 21" stroke-width="2"
+                stroke-linecap="round" stroke-linejoin="round" />
+            </svg>
+          </div>
+          <h3 class="text-xl font-bold mb-4">Customized Solutions for Every Business</h3>
+          <p class="text-teal-100">
+            We have successfully delivered numerous Web3, Blockchain, and AI projects for our clients.
+          </p>
+        </div>
+
+        <!-- Card 2 -->
+        <div>
+          <div
+            class="w-12 md:w-20 h-12 md:h-20 bg-[#FFFFFF1A] border border-gray-400 flex items-center justify-center lg:mb-20 md:mb-10 mb-6">
+            <svg class="w-12 h-12 text-white" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+              <path
+                d="M12 6V12L16 14M12 2C6.47715 2 2 6.47715 2 12C2 17.5228 6.47715 22 12 22C17.5228 22 22 17.5228 22 12C22 6.47715 17.5228 2 12 2Z"
+                stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+            </svg>
+          </div>
+          <h3 class="text-xl font-bold mb-4">Seamless Integration and Scalability</h3>
+          <p class="text-teal-100">
+            We have successfully delivered numerous Web3, Blockchain, and AI projects for our clients.
+          </p>
+        </div>
+
+        <!-- Card 3 -->
+        <div>
+          <div
+            class="w-12 md:w-20 h-12 md:h-20 bg-[#FFFFFF1A] border border-gray-400 flex items-center justify-center lg:mb-20 md:mb-10 mb-6">
+            <svg class="w-12 h-12 text-white" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+              <path
+                d="M15 15L21 21M10 17C6.13401 17 3 13.866 3 10C3 6.13401 6.13401 3 10 3C13.866 3 17 6.13401 17 10C17 13.866 13.866 17 10 17Z"
+                stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+            </svg>
+          </div>
+          <h3 class="text-xl font-bold mb-4">Reliable Support and Maintenance</h3>
+          <p class="text-teal-100">
+            We have successfully delivered numerous Web3, Blockchain, and AI projects for our clients.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="relative min-h-screen overflow-hidden bg-gray-100">
+    <!-- Background Images -->
+    <img src="./assets/images/what-to-do-image1.jpg" alt="Software Development" class="background-image active" id="img1">
+    <img src="./assets/images/what-to-do-image2.jpg" alt="Mobile Development" class="background-image" id="img2">
+    <img src="./assets/images/what-to-do-image3.jpg" alt="Web Development" class="background-image" id="img3">
+
+    <!-- Content Overlay -->
+    <div class="relative z-10 container mx-auto px-4 xl:px-20 lg:px-10 md:px-8 h-full py-10">
+        <div class="flex h-full">
+            <div class="w-3/5">
+                <!-- Left space for background image -->
+            </div>
+            <div class="w-2/5">
+                <div class="info-card flex flex-col justify-between h-full">
+                  <h2 class="text-3xl md:text-4xl lg:text-5xl font-bold font-bold mb-6">
+                    What we do</h2>
+                    
+                  <div>
+                    <p class="description md:mt-10 text-gray-600 text-lg lg:mt-20 mt-5">
+                      We build tailored software solutions to meet your unique business needs. 
+                      Our team of experienced developers will work closely with you to 
+                      understand your requirements and deliver high-quality, scalable software 
+                      applications.
+                  </p>
+
+                  <!-- Service Items -->
+                  <div class="flex-grow">
+                      <!-- Custom Software Development -->
+                      <div class="service-item active" onclick="switchService(0)">
+                          <span class="service-number text-lg text-black">01</span>
+                          <span class="service-text font-bold text-black text-right text-xl mr-0 md:text-2xl">Custom Software Development</span>
+                          <div class="service-icon">
+                              <svg class="w-5 h-5 text-white" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" 
+                                      d="M20 12H4m0 0l6-6m-6 6l6 6"/>
+                              </svg>
+                          </div>
+                      </div>
+
+                      <!-- Mobile App Development -->
+                      <div class="service-item" onclick="switchService(1)">
+                          <span class="service-number text-lg text-black">02</span>
+                          <span class="service-text font-bold text-black text-right text-xl mr-0 md:text-2xl">Mobile App Development</span>
+                          <div class="service-icon">
+                              <svg class="w-5 h-5 text-white" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" 
+                                      d="M12 18h.01M8 21h8a2 2 0 002-2V5a2 2 0 00-2-2H8a2 2 0 00-2 2v14a2 2 0 002 2z"/>
+                              </svg>
+                          </div>
+                      </div>
+
+                      <!-- Web Development -->
+                      <div class="service-item" onclick="switchService(2)">
+                          <span class="service-number text-lg text-black">03</span>
+                          <span class="service-text font-bold text-black text-right text-xl mr-0 md:text-2xl">Web Development</span>
+                          <div class="service-icon">
+                              <svg class="w-5 h-5 text-white" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" 
+                                      d="M21 12a9 9 0 01-9 9m9-9a9 9 0 00-9-9m9 9H3m9 9a9 9 0 01-9-9m9 9c1.657 0 3-4.03 3-9s-1.343-9-3-9m0 18c-1.657 0-3-4.03-3-9s1.343-9 3-9m-9 9a9 9 0 019-9"/>
+                              </svg>
+                          </div>
+                      </div>
+                  </div>
+                  </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+  <section class="relative min-h-screen overflow-hidden">
+    <!-- Background Images -->
+    <img src="./assets/images/tranform-banner.png" alt="Software Development" class="background-image2" id="img1">
+
+    <!-- Center Content -->
+    <div class="container relative z-10 mx-auto px-4 h-screen flex items-center justify-center">
+      <div class="text-center text-white max-w-3xl content-animate">
+        <h1 class="text-4xl md:text-6xl font-medium mb-6 leading-tight">
+          Transform Your <br /> Business Today
+        </h1>
+        <p class="text-xl mb-8 text-white/80">
+          Discover how our innovative solutions can help your business thrive.
+        </p>
+        <div class="flex justify-center gap-4">
+          <button
+            class="bg-[#00C4B4] hover:bg-[#00B3A4] text-white px-8 py-3 font-medium text-lg transition-colors duration-300">
+            Contact
+          </button>
+          <button class="bg-white hover:bg-gray-100 text-teal-900 px-8 py-3 font-medium text-lg transition-colors duration-300">
+            Learn More
+          </button>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- First Marquee (Left to Right) -->
+  <div class="marquee-container py-6">
+    <div class="overlay-left"></div>
+    <div class="overlay-right"></div>
+    <div class="marquee-right">
+      <!-- First set of logos -->
+      <div class="marquee-item mx-2">
+        <img src="./assets/images/relumeLogo.png" alt="Webflow" class="h-8 grayscale hover:grayscale-0 transition-all">
+      </div>
+      <div class="marquee-item mx-2">
+        <img src="./assets/images/weflow.png" alt="Relume" class="h-8 grayscale hover:grayscale-0 transition-all">
+      </div>
+      <div class="marquee-item mx-2">
+        <img src="./assets/images/relumeLogo.png" alt="Webflow" class="h-8 grayscale hover:grayscale-0 transition-all">
+      </div>
+      <div class="marquee-item mx-2">
+        <img src="./assets/images/weflow.png" alt="Relume" class="h-8 grayscale hover:grayscale-0 transition-all">
+      </div>
+      <div class="marquee-item mx-2">
+        <img src="./assets/images/relumeLogo.png" alt="Webflow" class="h-8 grayscale hover:grayscale-0 transition-all">
+      </div>
+      <div class="marquee-item mx-2">
+        <img src="./assets/images/weflow.png" alt="Relume" class="h-8 grayscale hover:grayscale-0 transition-all">
+      </div>
+      <div class="marquee-item mx-2">
+        <img src="./assets/images/relumeLogo.png" alt="Webflow" class="h-8 grayscale hover:grayscale-0 transition-all">
+      </div>
+
+      <!-- Duplicated set for seamless loop -->
+      <div class="marquee-item mx-2">
+        <img src="./assets/images/weflow.png" alt="Relume" class="h-8 grayscale hover:grayscale-0 transition-all">
+      </div>
+      <div class="marquee-item mx-2">
+        <img src="./assets/images/relumeLogo.png" alt="Relume" class="h-8 grayscale hover:grayscale-0 transition-all">
+      </div>
+      <div class="marquee-item mx-2">
+        <img src="./assets/images/weflow.png" alt="Relume" class="h-8 grayscale hover:grayscale-0 transition-all">
+      </div>
+      <div class="marquee-item mx-2">
+        <img src="./assets/images/relumeLogo.png" alt="Relume" class="h-8 grayscale hover:grayscale-0 transition-all">
+      </div>
+      <div class="marquee-item mx-2">
+        <img src="./assets/images/weflow.png" alt="Relume" class="h-8 grayscale hover:grayscale-0 transition-all">
+      </div>
+      <div class="marquee-item mx-2">
+        <img src="./assets/images/relumeLogo.png" alt="Relume" class="h-8 grayscale hover:grayscale-0 transition-all">
+      </div>
+      <div class="marquee-item mx-2">
+        <img src="./assets/images/weflow.png" alt="Relume" class="h-8 grayscale hover:grayscale-0 transition-all">
+      </div>
+    </div>
+  </div>
+
+  <!-- Second Marquee (Right to Left) -->
+  <div class="marquee-container py-6">
+    <div class="overlay-left"></div>
+    <div class="overlay-right"></div>
+    <div class="marquee-left">
+      <!-- First set of logos -->
+      <div class="marquee-item mx-2">
+        <img src="./assets/images/relumeLogo.png" alt="Webflow" class="h-8 grayscale hover:grayscale-0 transition-all">
+      </div>
+      <div class="marquee-item mx-2">
+        <img src="./assets/images/weflow.png" alt="Relume" class="h-8 grayscale hover:grayscale-0 transition-all">
+      </div>
+      <div class="marquee-item mx-2">
+        <img src="./assets/images/relumeLogo.png" alt="Webflow" class="h-8 grayscale hover:grayscale-0 transition-all">
+      </div>
+      <div class="marquee-item mx-2">
+        <img src="./assets/images/weflow.png" alt="Relume" class="h-8 grayscale hover:grayscale-0 transition-all">
+      </div>
+      <div class="marquee-item mx-2">
+        <img src="./assets/images/relumeLogo.png" alt="Webflow" class="h-8 grayscale hover:grayscale-0 transition-all">
+      </div>
+      <div class="marquee-item mx-2">
+        <img src="./assets/images/weflow.png" alt="Relume" class="h-8 grayscale hover:grayscale-0 transition-all">
+      </div>
+      <div class="marquee-item mx-2">
+        <img src="./assets/images/relumeLogo.png" alt="Webflow" class="h-8 grayscale hover:grayscale-0 transition-all">
+      </div>
+
+      <!-- Duplicated set for seamless loop -->
+      <div class="marquee-item mx-2">
+        <img src="./assets/images/weflow.png" alt="Relume" class="h-8 grayscale hover:grayscale-0 transition-all">
+      </div>
+      <div class="marquee-item mx-2">
+        <img src="./assets/images/relumeLogo.png" alt="Relume" class="h-8 grayscale hover:grayscale-0 transition-all">
+      </div>
+      <div class="marquee-item mx-2">
+        <img src="./assets/images/weflow.png" alt="Relume" class="h-8 grayscale hover:grayscale-0 transition-all">
+      </div>
+      <div class="marquee-item mx-2">
+        <img src="./assets/images/relumeLogo.png" alt="Relume" class="h-8 grayscale hover:grayscale-0 transition-all">
+      </div>
+      <div class="marquee-item mx-2">
+        <img src="./assets/images/weflow.png" alt="Relume" class="h-8 grayscale hover:grayscale-0 transition-all">
+      </div>
+      <div class="marquee-item mx-2">
+        <img src="./assets/images/relumeLogo.png" alt="Relume" class="h-8 grayscale hover:grayscale-0 transition-all">
+      </div>
+      <div class="marquee-item mx-2">
+        <img src="./assets/images/weflow.png" alt="Relume" class="h-8 grayscale hover:grayscale-0 transition-all">
+      </div>
+    </div>
+  </div>
+  <section class="py-16 md:py-24 bg-white">
+    <div class="container mx-auto px-4 xl:px-20 lg:px-10 md:px-8">
+      <!-- Desktop Layout -->
+      <div class="hidden md:flex content-wrapper gap-12">
+        <!-- Left Side - Image -->
+        <div class="w-1/2 flex justify-center relative">
+          <img src="./assets/images/expri.png" alt="Team working" class="w-full h-[500px] object-cover">
+       
+        </div>
+
+        <!-- Right Side - Content -->
+        <div class="w-1/2 flex flex-col justify-center">
+          <h2 class="text-4xl md:text-5xl font-bold leading-tight mb-6">
+            Experience the Power of our Innovative Solutions and Cutting-Edge Technology
+          </h2>
+          <p class="text-gray-600 mb-12">
+            With over 20 years of experience, Solved, has been at the forefront of software development,
+            specializing in startups. Our team of experts has successfully built applications, developed
+            mobile solutions, and implemented Web3, Blockchain, and AI projects.
+          </p>
+
+          <!-- Stats Grid -->
+          <div class="grid grid-cols-2 gap-8">
+            <!-- Growth Stat -->
+            <div>
+              <h3 class="text-3xl font-bold mb-2">50% Growth</h3>
+              <p class="text-gray-600">Increase in Revenue for Our Clients</p>
+            </div>
+            <!-- Satisfaction Stat -->
+            <div>
+              <h3 class="text-3xl font-bold mb-2">50% Satisfaction</h3>
+              <p class="text-gray-600">Positive Feedback from Happy Clients</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Mobile Layout -->
+      <div class="md:hidden flex flex-col">
+        <!-- Content -->
+        <div class="mb-8">
+          <h2 class="text-3xl font-bold leading-tight mb-6">
+            Experience the Power of our Innovative Solutions and Cutting-Edge Technology
+          </h2>
+          <p class="text-gray-600 mb-8">
+            With over 20 years of experience, Solved, has been at the forefront of software development,
+            specializing in startups. Our team of experts has successfully built applications, developed
+            mobile solutions, and implemented Web3, Blockchain, and AI projects.
+          </p>
+        </div>
+
+        <!-- Stats Grid -->
+        <div class="grid grid-cols-1 gap-6 mb-8">
+          <!-- Growth Stat -->
+          <div>
+            <h3 class="text-3xl font-bold mb-2">50% Growth</h3>
+            <p class="text-gray-600">Increase in Revenue for Our Clients</p>
+          </div>
+          <!-- Satisfaction Stat -->
+          <div>
+            <h3 class="text-3xl font-bold mb-2">50% Satisfaction</h3>
+            <p class="text-gray-600">Positive Feedback from Happy Clients</p>
+          </div>
+        </div>
+
+        <!-- Image -->
+        <div class="relative">
+          <img src="./assets/images/s1.png" alt="Team working" class="w-full h-[300px] object-cover">
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- Innovate -->
+
+  <section class="py-16 md:py-24 bg-white">
+    <div class="container mx-auto px-4 xl:px-20 lg:px-10 md:px-8">
+      <!-- Top Section -->
+      <div class="flex flex-col lg:flex-row justify-between mb-16 gap-8">
+        <!-- Left Side -->
+        <div class="lg:w-1/2">
+          <div class="inline-block px-4 py-1 bg-[#00A74F] text-white font-medium rounded-full text-sm mb-6">
+            Innovate
+          </div>
+          <h2 class="text-4xl md:text-5xl font-bold mb-6">
+            Get in Touch
+          </h2>
+          <p class="text-gray-600 max-w-lg">
+            Solved, has a global presence with offices in multiple locations.
+          </p>
+        </div>
+
+        <!-- Right Side - Contact Info -->
+        <div class="lg:w-1/2 space-y-8">
+          <!-- Email -->
+          <div class="flex items-center gap-4">
+            <div class="w-12 h-12 bg-[#00A79D]  flex items-center justify-center flex-shrink-0">
+              <svg class="md:w-12 md:h-12 w-8 h-8  text-white" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                <path
+                  d="M3 8L10.8906 13.2604C11.5624 13.7394 12.4376 13.7394 13.1094 13.2604L21 8M5 19H19C20.1046 19 21 18.1046 21 17V7C21 5.89543 20.1046 5 19 5H5C3.89543 5 3 5.89543 3 7V17C3 18.1046 3.89543 19 5 19Z"
+                  stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+              </svg>
+            </div>
+            <div>
+              <h3 class="font-bold text-lg">Email</h3>
+              <a class="text-gray-600 text-lg" href="mailto:info@solved.com" class="text-gray-600">
+                info@solved.com
+              </a>
+            </div>
+          </div>
+
+          <!-- Phone -->
+          <div class="flex items-center gap-4">
+            <div class="w-12 h-12 bg-green-500  flex items-center justify-center flex-shrink-0">
+              <svg class="md:w-12 md:h-12 w-8 h-8  text-white" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                <path
+                  d="M3 5.5C3 14.0604 9.93959 21 18.5 21C18.8862 21 19.2691 20.9859 19.6483 20.9581C20.4477 20.9023 21 20.2649 21 19.4494V15.5725C21 14.8382 20.4448 14.2225 19.7182 14.1482L15.9872 13.6875C15.3274 13.6207 14.7011 13.9135 14.3962 14.4537L13.4237 16.082C11.4922 15.0104 9.98776 13.5059 8.9162 11.5744L10.5445 10.602C11.0847 10.2971 11.3775 9.67079 11.3107 9.01104L10.85 5.28198C10.7757 4.55536 10.16 4 9.42568 4H5.54918C4.73367 4 4.09624 4.55232 4.04044 5.35172C4.01258 5.73086 3.99847 6.11384 3.99847 6.5"
+                  stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+              </svg>
+            </div>
+            <div>
+              <h3 class="font-bold text-xl">Phone</h3>
+              <a class="text-gray-600 text-lg" href="tel:+1555123-4567" class="text-gray-600">
+                +1 (555) 123-4567
+              </a>
+            </div>
+          </div>
+
+          <!-- Office -->
+          <div class="flex items-center gap-4">
+            <div class="w-12 h-12 bg-orange-500  flex items-center justify-center flex-shrink-0">
+              <svg class="md:w-12 md:h-12 w-8 h-8  text-white" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                <path
+                  d="M17.6569 16.6569C16.7202 17.5935 14.7616 19.5521 13.4142 20.8995C12.6332 21.6805 11.3668 21.6805 10.5858 20.8995C9.26105 19.5748 7.34692 17.6606 6.34315 16.6569C3.21895 13.5327 3.21895 8.46734 6.34315 5.34315C9.46734 2.21895 14.5327 2.21895 17.6569 5.34315C20.781 8.46734 20.781 13.5327 17.6569 16.6569Z"
+                  stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                <path
+                  d="M15 11C15 12.6569 13.6569 14 12 14C10.3431 14 9 12.6569 9 11C9 9.34315 10.3431 8 12 8C13.6569 8 15 9.34315 15 11Z"
+                  stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+              </svg>
+            </div>
+            <div>
+              <h3 class="font-bold text-xl">Office</h3>
+              <p class="text-gray-600 text-lg ">
+                123 Main St, Sydney NSW 2000, Australia
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Map -->
+      <div class="rounded-xl overflow-hidden">
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3312.4700791925155!2d151.20442841521!3d-33.87029242665476!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6b12ae401e8b983f%3A0x5017d681632ccc0!2sSydney%20NSW%202000%2C%20Australia!5e0!3m2!1sen!2sus!4v1635959773522!5m2!1sen!2sus"
+          width="100%" height="400" style="border:0;" allowfullscreen="" loading="lazy">
+        </iframe>
+      </div>
+    </div>
+  </section>
+  <!-- footer -->
+
+  <footer class="bg-white pt-16 pb-8">
+    <div class="container mx-auto px-4 xl:px-20 lg:px-10 md:px-8">
+      <!-- Top Section -->
+      <div class="grid grid-cols-1 md:grid-cols-4 gap-8 mb-16">
+        <!-- Social & Language -->
+        <div class="space-y-8 md:col-span-2">
+          <div>
+            <h3 class="font-semibold footer-font text-lg mb-4">Social</h3>
+            <div class="flex gap-2">
+              <a href="#" class="social-link">
+                <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
+                  <path
+                    d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z" />
+                </svg>
+              </a>
+              <a href="#" class="social-link">
+                <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
+                  <path
+                    d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z" />
+                </svg>
+              </a>
+              <a href="#" class="social-link">
+                <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
+                  <path
+                    d="M23.953 4.57a10 10 0 01-2.825.775 4.958 4.958 0 002.163-2.723c-.951.555-2.005.959-3.127 1.184a4.92 4.92 0 00-8.384 4.482C7.69 8.095 4.067 6.13 1.64 3.162a4.822 4.822 0 00-.666 2.475c0 1.71.87 3.213 2.188 4.096a4.904 4.904 0 01-2.228-.616v.06a4.923 4.923 0 003.946 4.827 4.996 4.996 0 01-2.212.085 4.936 4.936 0 004.604 3.417 9.867 9.867 0 01-6.102 2.105c-.39 0-.779-.023-1.17-.067a13.995 13.995 0 007.557 2.209c9.053 0 13.998-7.496 13.998-13.985 0-.21 0-.42-.015-.63A9.935 9.935 0 0024 4.59z" />
+                </svg>
+              </a>
+              <a href="#" class="social-link">
+                <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
+                  <path
+                    d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z" />
+                </svg>
+              </a>
+            </div>
+          </div>
+          <div>
+            <h3 class="font-semibold footer-font text-lg mb-4">Language</h3>
+            <div class="w-auto inline-block bg-[#FAFAFA] border border-gray-400">
+              <div class="flex">
+                <button class="language-btn bg-[#FAFAFA] rounded-0 h-12 w-12  active">EN</button>
+                <button class="language-btn bg-[#FAFAFA] rounded-0 h-12 w-12 ">AR</button>
+                <button class="language-btn bg-[#FAFAFA] rounded-0 h-12 w-12 ">ES</button>
+                <button class="language-btn bg-[#FAFAFA] rounded-0 h-12 w-12 ">FR</button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Partners -->
+        <div>
+          <h3 class="font-semibold footer-font text-lg mb-4">Partners</h3>
+          <ul class="space-y-2">
+            <li><a href="#" class="text-black hover:text-gray-900">Services</a></li>
+            <li><a href="#" class="text-black hover:text-gray-900">Products</a></li>
+            <li><a href="#" class="text-black hover:text-gray-900">Contact Us</a></li>
+            <li><a href="#" class="text-black hover:text-gray-900">Support</a></li>
+            <li><a href="#" class="text-black hover:text-gray-900">Blog</a></li>
+          </ul>
+        </div>
+
+        <!-- About Us -->
+        <div>
+          <h3 class="font-semibold mb-4 footer-font">About Us</h3>
+          <ul class="space-y-2">
+            <li><a href="#" class="text-black hover:text-gray-900">Resources</a></li>
+            <li><a href="#" class="text-black hover:text-gray-900">FAQs</a></li>
+            <li><a href="#" class="text-black hover:text-gray-900">Support Center</a></li>
+            <li><a href="#" class="text-black hover:text-gray-900">Terms & Conditions</a></li>
+            <li><a href="#" class="text-black hover:text-gray-900">Privacy Policy</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <!-- Logo & Copyright -->
+    <div class="pt-8">
+      <div class="footer-logo mb-8"><img src="./assets/images/solvedImage.png" class="w-full" /></div>
+    </div>
+    </div>
+    <div class="container mx-auto px-4 xl:px-20 lg:px-10 md:px-8">
+      <div class="flex flex-col md:flex-row justify-between items-center gap-4">
+        <div class="text-sm text-black">
+          © 2023 Solved. All rights reserved.
+        </div>
+        <div class="flex gap-6 text-sm text-black">
+          <a href="#" class="hover:text-black">Privacy Policy</a>
+          <a href="#" class="hover:text-black">Terms of Service</a>
+          <a href="#" class="hover:text-black">Cookie Settings</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <script>
+    // Mobile menu functionality
+    const menuBtn = document.getElementById('menuBtn');
+    const mobileMenu = document.getElementById('mobileMenu');
+    const closeMenu = document.getElementById('closeMenu');
+    const mobileProdBtn = document.getElementById('mobileProdBtn');
+    const mobileProdMenu = document.getElementById('mobileProdMenu');
+    const mobileLangBtn = document.getElementById('mobileLangBtn');
+    const mobileLangMenu = document.getElementById('mobileLangMenu');
+
+    menuBtn.addEventListener('click', () => {
+      mobileMenu.classList.add('show');
+      document.body.style.overflow = 'hidden';
+    });
+
+    closeMenu.addEventListener('click', () => {
+      mobileMenu.classList.remove('show');
+      document.body.style.overflow = 'auto';
+    });
+
+    mobileProdBtn.addEventListener('click', () => {
+      mobileProdMenu.classList.toggle('hidden');
+    });
+
+    mobileLangBtn.addEventListener('click', () => {
+      mobileLangMenu.classList.toggle('hidden');
+    });
+
+    // Desktop dropdowns functionality
+    function setupDropdown(btnId, menuId) {
+      const btn = document.getElementById(btnId);
+      const menu = document.getElementById(menuId);
+      let isOpen = false;
+
+      btn.addEventListener('click', (e) => {
+        e.stopPropagation();
+        isOpen = !isOpen;
+        if (isOpen) {
+          document.querySelectorAll('.dropdown-menu, .lang-dropdown-menu').forEach(m => {
+            m.classList.remove('show');
+          });
+          menu.classList.add('show');
+        } else {
+          menu.classList.remove('show');
+        }
+      });
+
+      return { menu, setIsOpen: (value) => isOpen = value };
+    }
+
+    const products = setupDropdown('dropdownBtn', 'dropdownMenu');
+    const lang = setupDropdown('langBtn', 'langMenu');
+
+    document.addEventListener('click', (e) => {
+      if (!e.target.closest('.dropdown-menu') && !e.target.closest('#dropdownBtn') &&
+        !e.target.closest('.lang-dropdown-menu') && !e.target.closest('#langBtn')) {
+        document.querySelectorAll('.dropdown-menu, .lang-dropdown-menu').forEach(menu => {
+          menu.classList.remove('show');
+        });
+        products.setIsOpen(false);
+        lang.setIsOpen(false);
+      }
+    });
+
+    document.addEventListener('keydown', (e) => {
+      if (e.key === 'Escape') {
+        mobileMenu.classList.remove('show');
+        document.body.style.overflow = 'auto';
+        document.querySelectorAll('.dropdown-menu, .lang-dropdown-menu').forEach(menu => {
+          menu.classList.remove('show');
+        });
+        products.setIsOpen(false);
+        lang.setIsOpen(false);
+      }
+    });
+
+    // Language selection
+    function setupLangSelection(menuId, btnId) {
+      document.querySelectorAll(`#${menuId} button`).forEach(btn => {
+        btn.addEventListener('click', () => {
+          const langCode = btn.textContent.slice(0, 2);
+          document.getElementById(btnId).textContent = `${langCode} ▼`;
+          if (menuId === 'langMenu') {
+            document.getElementById(menuId).classList.remove('show');
+            lang.setIsOpen(false);
+          } else {
+            document.getElementById(menuId).classList.add('hidden');
+          }
+        });
+      });
+    }
+
+    setupLangSelection('langMenu', 'langBtn');
+    setupLangSelection('mobileLangMenu', 'mobileLangBtn');
+
+    const serviceItems = document.querySelectorAll('.service-item');
+        const images = document.querySelectorAll('.background-image');
+        
+        function switchService(index) {
+            // Update service items
+            serviceItems.forEach((item, i) => {
+                if (i === index) {
+                    item.classList.add('active');
+                } else {
+                    item.classList.remove('active');
+                }
+            });
+
+            // Update images
+            images.forEach((image, i) => {
+                if (i === index) {
+                    image.classList.add('active');
+                } else {
+                    image.classList.remove('active');
+                }
+            });
+        }
+
+        // Initialize first service
+        switchService(0);
+
+  </script>
+</body>
+
+</html>

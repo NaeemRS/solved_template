@@ -1,0 +1,1174 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Solved - Transforming Ideas into Solutions</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://api.fontshare.com/v2/css?f[]=satoshi@900,700,500,400&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./assets/style.css">
+</head>
+
+<body class="overflow-x-hidden">
+  <!-- Mobile Menu -->
+  <div id="mobileMenu" class="mobile-menu">
+    <div class="flex justify-between items-center mb-8">
+      <a href="/" class="text-2xl font-bold text-teal-500">
+        <img class="w-24 " src="./assets/images/logo.svg" alt="Mobile Development" id="img2">
+      </a>
+      <button id="closeMenu" class="text-2xl p-2">×</button>
+    </div>
+    <div class="flex flex-col space-y-4">
+      <a href="#" class="text-[#18181A] hover:text-gray-900 py-2">About Us</a>
+      <a href="#" class="text-[#18181A] hover:text-gray-900 py-2">Services</a>
+      <div class="relative">
+        <button id="mobileProdBtn" class="text-[#18181A] hover:text-gray-900 py-2 w-full text-left">
+          Products ▼
+        </button>
+        <div id="mobileProdMenu" class="hidden pl-4 space-y-2 mt-2">
+          <button class="block w-full text-left px-4 py-2 text-gray-700 hover:bg-gray-100">EN</button>
+          <button class="block w-full text-left px-4 py-2 text-gray-700 hover:bg-gray-100">AR</button>
+          <button class="block w-full text-left px-4 py-2 text-gray-700 hover:bg-gray-100">ES</button>
+          <button class="block w-full text-left px-4 py-2 text-gray-700 hover:bg-gray-100">FR</button>
+        </div>
+      </div>
+      <div class="relative">
+        <button id="mobileLangBtn" class="text-black hover:text-gray-900 py-2 w-full text-left">
+          Language: EN ▼
+        </button>
+        <div id="mobileLangMenu" class="hidden pl-4 space-y-2 mt-2">
+          <button class="block w-full text-left px-4 py-2 text-gray-700 hover:bg-gray-100">EN</button>
+          <button class="block w-full text-left px-4 py-2 text-gray-700 hover:bg-gray-100">AR</button>
+          <button class="block w-full text-left px-4 py-2 text-gray-700 hover:bg-gray-100">ES</button>
+          <button class="block w-full text-left px-4 py-2 text-gray-700 hover:bg-gray-100">FR</button>
+        </div>
+      </div>
+      <button class="bg-[#00A79D] text-white px-6 py-2  hover:bg-teal-600 w-full">
+        Contact Us
+      </button>
+    </div>
+  </div>
+
+  <!-- Navigation -->
+
+
+  <!-- Hero Section -->
+  <section class="lg:h-screen  md:overflow-hidden">
+    <nav class="container-fluid mx-auto px-4 xl:px-20 lg:px-10 md:px-8 py-4 flex justify-between items-center">
+      <div class="flex items-center">
+        <img class="w-24 2xl:w-32" src="./assets/images/logo.svg" alt="Mobile Development" id="img2">
+      </div>
+      <div class="hidden md:flex space-x-6">
+        <a href="#" class="text-black hover:text-gray-900 text-base font-medium">About Us</a>
+        <a href="#" class="text-black hover:text-gray-900 text-base font-medium">Services</a>
+        <div class="relative group">
+          <button id="dropdownBtn"
+            class="text-black hover:text-gray-900 text-base font-medium flex gap-2 items-center !w-auto">
+            Products
+            <svg xmlns="http://www.w3.org/2000/svg" width="24px" height="24px" viewBox="0 0 24 24">
+              <path fill="none" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"
+                d="m6 9l6 6l6-6" />
+            </svg></button>
+          <div id="dropdownMenu" class="dropdown-menu">
+            <a href="#" class="block px-4 py-2 text-gray-700 hover:bg-gray-100">EN</a>
+            <a href="#" class="block px-4 py-2 text-gray-700 hover:bg-gray-100">AR</a>
+            <a href="#" class="block px-4 py-2 text-gray-700 hover:bg-gray-100">ES</a>
+            <a href="#" class="block px-4 py-2 text-gray-700 hover:bg-gray-100">FR</a>
+          </div>
+        </div>
+      </div>
+      <div class="flex items-center space-x-4">
+        <div class="relative hidden md:block">
+          <button id="langBtn"
+            class="text-gray-600 lg:text-base text-sm flex items-center justify-center shadow border h-9 px-1 w-16 gap-2">EN
+            <img class="w-7 " src="./assets/images/arrow-dow.svg" alt="Mobile Development" id="img2">
+          </button>
+          <div id="langMenu" class="lang-dropdown-menu">
+            <button class="block w-full text-left px-4 py-2 text-gray-700 hover:bg-gray-100">EN</button>
+            <button class="block w-full text-left px-4 py-2 text-gray-700 hover:bg-gray-100">AR</button>
+            <button class="block w-full text-left px-4 py-2 text-gray-700 hover:bg-gray-100">ES</button>
+            <button class="block w-full text-left px-4 py-2 text-gray-700 hover:bg-gray-100">FR</button>
+          </div>
+        </div>
+        <button class="bg-[#00A79D] contact-btn text-white h-9 hover:bg-teal-600 hidden md:block">
+          Contact Us
+        </button>
+        <button id="menuBtn" class="text-gray-600 lg:text-base text-sm md:hidden">☰</button>
+      </div>
+    </nav>
+    <div class="container-fluid mx-auto px-4 xl:px-20 lg:px-10 md:px-8 py-8 md:py-20">
+      <div class="flex flex-col md:flex-row">
+        <div class="w-full flex flex-col justify-between lg:w-[45%] mb-8 md:mb-0">
+          <h1 class="text-4xl lg:text-4xl xl:text-6xl font-bold mb-6 lg:w-[548px]">
+            Transforming Ideas into Innovative Solutions for You
+          </h1>
+          <div>
+            <p class="text-gray-600 lg:text-base text-sm 2xl:mb-8 mb-4 xl:w-[548px]">
+              Solved is a leading software IT company with over 20 years of experience in building applications,
+              mobile development, Web3, Blockchain, and AI projects. We specialize in working with startups,
+              helping them turn their ideas into successful ventures. Our team of experts is dedicated to
+              delivering innovative solutions tailored to your unique needs.
+            </p>
+            <div class="flex flex gap-2 sm:space-x-4">
+              <button
+                class="bg-[#00A79D] contact-btn text-white text-base font-medium hover:bg-teal-600 w-full sm:w-auto text-center">
+                Learn More
+              </button>
+              <button
+                class="border contact-btn border-gray-300 text-base font-medium hover:bg-gray-50 w-full sm:w-auto text-center">
+                Sign Up
+              </button>
+            </div>
+          </div>
+        </div>
+        <div class="w-full flex justify-center lg:w-[55%]">
+          <div class="relative">
+            <div class=" bg-no-repeat bg-center">
+              <img src="./assets/images/top-section-image.png" alt="Office workers at computers"
+              class="2xl:w-[80%] xl:w-[70%] mx-auto w-[60%] object-contain">
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class=" lg:h-screen overflow-hidden">
+    <div class="container-fluid mx-auto ">
+      <div class="grid lg:grid-cols-2 gap-12 lg:h-[100vh]">
+        <!-- Left Column -->
+        <div>
+          <div class="w-full h-full md:mt-20 lg:mt-28 mt-10 pl-4 xl:pl-20 lg:pl-10 lg:pl-8 p-2 px-4">
+            <div
+              class="inline-flex px-4 h-8 justify-center items-center bg-[#00A74F] text-white font-medium rounded-full text-sm mb-6">
+              Expertise
+            </div>
+            <h2 class="text-3xl lg:text-4xl xltext-6xl xl:text-5xl lg:w-[500px]  font-bold mb-6">
+              Building Innovative Applications and Mobile Solutions
+            </h2>
+            <p class="text-gray-600 lg:text-base text-sm mb-8 xl:w-[548px]">
+              At Solved, we specialize in application and mobile development, leveraging our 20 years of
+              experience to build innovative solutions that meet the unique needs of our clients. Our team of
+              experts is dedicated to delivering high-quality software products that drive business growth and
+              success.
+            </p>
+            <div class="flex flex-wrap gap-4">
+              <button class="bg-[#00A79D] contact-btn2 text-white h-12 text-base  hover:bg-teal-600">
+                Learn More
+              </button>
+              <button
+                class="border border-gray-300 contact-btn2 h-12 flex text-base font-medium justify-center items-center gap-3  hover:bg-gray-50 w-full sm:w-auto text-center">
+                Contact Us
+                <svg class="w-4 h-4" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                  <path d="M5 12h14m-7-7l7 7-7 7" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                </svg>
+              </button>
+            </div>
+          </div>
+        </div>
+        <!-- Right Column - Cards -->
+        <div class="w-full h-full bg-[#E1F1F0]">
+          <div class="h-full bg-[#E1F1F0] p-4 2xl:px-20 xl:py-[54px] xl:py-[40px] lg:py-5  xl:px-[68px] md:p-8">
+            <div class="grid gap-6 h-full lg:grid-cols-1 sm:grid-cols-2">
+              <!-- Expert Team Card -->
+              <div class="bg-white p-6 shadow-sm h-full flex flex-col justify-between">
+                <div class="mb-20 lg:mb-10 md:mb-6">
+                  <div class="w-20 h-20 bg-[#00A79D] flex items-center justify-center">
+                    <img class="md:w-12 md:h-12 w-8 h-8 " src="./assets/images/team-work.svg" alt="Mobile Development"
+                      id="img2">
+
+                  </div>
+                </div>
+                <div>
+                  <h3 class="text-xl xl:text-2xl font-bold mb-2">Expert Team</h3>
+                  <p class="text-gray-600 lg:text-base text-sm xl:text-lg text-base ">
+                    Our team of skilled professionals is committed to delivering exceptional software
+                    solutions.
+                  </p>
+                </div>
+              </div>
+
+              <!-- Experience Card -->
+              <div class="bg-white p-6 shadow-sm h-full flex flex-col justify-between">
+                <div class="mb-20 lg:mb-10 md:mb-6">
+                  <div class="w-20 h-20 bg-[#00A74F] flex items-center justify-center">
+                    <img class="md:w-12 md:h-12 w-8 h-8 " src="./assets/images/Experience.svg" alt="Mobile Development"
+                      id="img2">
+
+                  </div>
+                </div>
+                <div>
+                  <h3 class="text-xl xl:text-2xl font-bold mb-2">Experience</h3>
+                  <p class="text-gray-600 lg:text-base text-sm xl:text-lg text-base ">
+                    Over 20 years of building cutting-edge applications and mobile solutions for clients
+                    worldwide.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="lg:h-screen lg:flex items-center overflow-hidden">
+    <div class="container-fluid mx-auto">
+      <div class="grid lg:grid-cols-2 gap-12 lg:h-[100vh]">
+        <div class="">
+          <div class="w-full h-full md:mt-20 lg:mt-28 mt-10 pl-4 xl:pl-20 lg:pl-10 lg:pl-8 p-2 px-4">
+
+            <div
+              class="inline-flex justify-center items-center px-4 h-8  bg-[#00A74F] text-white font-medium rounded-full text-sm mb-6">
+              Expertize
+            </div>
+            <h2 class="text-3xl lg:text-4xl xltext-6xl xl:text-5xl lg:w-[500px] font-bold mb-6">
+              Unlocking the Potential of Web3, Blockchain, and AI Projects
+            </h2>
+            <p class="text-gray-600 lg:text-base text-sm mb-8 xl:w-[548px]">
+              With over 20 years of experience, Solved specializes in building innovative applications, mobile
+              development, and cutting-edge projects in Web3, Blockchain, and AI.
+            </p>
+          </div>
+        </div>
+        <div class="w-full h-full bg-[#E1F1F0]">
+          <div class="bg-[#E1F1F0] p-4 xl:px-220 h-full xl:py-[54px] xl:py-[40px] lg:py-5  xl:px-[68px] md:p-8">
+            <div class="grid gap-6 h-full lg:grid-cols-1 md:grid-cols-2">
+              <!-- Web3 Expert Card -->
+              <div class="bg-white p-6 shadow-sm h-full flex flex-col justify-between">
+                <div class="mb-20 lg:mb-10 md:mb-6">
+                  <div class="w-20 h-20 bg-orange-500 flex items-center justify-center">
+                    <img class="md:w-12 md:h-12 w-8 h-8 " src="./assets/images/eth.svg" alt="Mobile Development"
+                      id="img2">
+
+                  </div>
+                </div>
+                <div>
+                  <h3 class="text-xl xl:text-2xl font-bold mb-2">Web3 Expert</h3>
+                  <p class="text-gray-600 lg:text-base text-sm">We have successfully delivered numerous Web3,
+                    Blockchain, and
+                    AI projects for our clients.</p>
+                </div>
+              </div>
+              <!-- Expertise Card -->
+              <div class="bg-white p-6 shadow-sm h-full flex flex-col justify-between">
+                <div class="mb-20 lg:mb-10 md:mb-6">
+                  <div class="w-20 h-20 bg-purple-500 flex items-center justify-center">
+                    <img class="md:w-12 md:h-12 w-8 h-8 " src="./assets/images/Expertise.svg" alt="Mobile Development"
+                      id="img2">
+
+                  </div>
+                </div>
+                <div>
+                  <h3 class="text-xl xl:text-2xl font-bold mb-2">Expertise</h3>
+                  <p class="text-gray-600 lg:text-base text-sm">Our team of skilled professionals is well-versed in the
+                    latest
+                    technologies and industry trends.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Startup Section -->
+  <section class="b lg:h-screen overflow-hidden">
+    <div class="container-fluid mx-auto">
+      <div class="grid lg:grid-cols-2 gap-12 lg:h-[100vh]">
+        <div>
+          <div class="w-full h-full md:mt-20 lg:mt-28 mt-10 pl-4 xl:pl-20 lg:pl-10 lg:pl-8 p-2 px-4">
+            <div
+              class="inline-flex px-4 h-8 jjustify-center items-center bg-[#00A74F] text-white font-medium rounded-full text-sm mb-6">
+              Expertize
+            </div>
+            <h2 class="text-3xl lg:text-4xl xltext-6xl xl:text-5xl lg:w-[500px] font-bold mb-6">
+              Unlock Your Startup's Potential with Our Expertise and Innovation
+            </h2>
+            <p class="text-gray-600 lg:text-base text-sm mb-8 xl:w-[548px]">
+              At Solved, we specialize in startups and have over 20 years of experience in building
+              applications, mobile development, Web3, Blockchain, and AI. Our dedicated team combines industry
+              knowledge and cutting-edge solutions to help you drive forward in today's competitive market.
+            </p>
+
+          </div>
+        </div>
+        <div class="w-full h-full bg-[#E1F1F0]">
+          <div class="bg-[#E1F1F0] h-full p-4 2xl:px-20 xl:py-[54px] xl:py-[40px] lg:py-5  xl:px-[68px] md:p-8">
+            <div class="grid gap-6 h-full lg:grid-cols-1 md:grid-cols-2">
+              <!-- SEO Expert Card -->
+              <div class="bg-white p-6 shadow-sm h-full flex flex-col justify-between">
+                <div class="mb-20 lg:mb-10 md:mb-6">
+                  <div class="w-20 h-20 bg-[#00A79D] flex items-center justify-center">
+                    <img class="md:w-12 md:h-12 w-8 h-8 " src="./assets/images/SEO-Expert.svg" alt="Mobile Development"
+                      id="img2">
+
+                  </div>
+                </div>
+                <div>
+                  <h3 class="text-xl xl:text-2xl font-bold mb-2">SEO Expert</h3>
+                  <p class="text-gray-600 lg:text-base text-sm">We have successfully delivered numerous Web3,
+                    Blockchain, and
+                    AI projects for our clients.</p>
+                </div>
+              </div>
+              <!-- High Conversion Rate Card -->
+              <div class="bg-white p-6 shadow-sm h-full flex flex-col justify-between">
+                <div class="mb-20 lg:mb-10 md:mb-6">
+                  <div class="w-20 h-20 bg-green-500 flex items-center justify-center">
+                    <img class="md:w-12 md:h-12 w-8 h-8 " src="./assets/images/high-rate.svg" alt="Mobile Development"
+                      id="img2">
+
+                  </div>
+                </div>
+                <div>
+                  <h3 class="text-xl xl:text-2xl font-bold mb-2">High Conversion Rate</h3>
+                  <p class="text-gray-600 lg:text-base text-sm">Our team of skilled professionals is well-versed in the
+                    latest
+                    technologies and industry trends.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="bg-teal-700 lg:h-screen lg:flex items-center overflow-hidden text-white py-20">
+    <div class="container-fluid mx-auto px-4 xl:px-20 lg:px-10 md:px-8">
+      <!-- Header -->
+      <div class="text-center 2xl:mb-10 mb-2 xl:mb-4 lg:w-[734px] mx-auto">
+        <div
+          class="inline-flex justify-center items-center px-4 h-8 bg-white text-[#42543D] rounded-full font-medium text-sm mb-2 xl:mb-6">
+          Innovate
+        </div>
+        <h2 class="text-3xl lg:text-4xl xltext-6xl xl:text-5xl font-bold font-bold xl:mb-4 mb-3">
+          Our Wide Range of Services
+        </h2>
+        <p class="text-teal-100 mx-auto lg:text-base text-sm mb-5">
+          At Solved we offer a comprehensive suite of software development solutions to help businesses thrive
+          in the digital age. From application development to Web3, AI, BlockChain, and AI integration - we're
+          here to boost your online presence.
+        </p>
+        <div class="flex justify-center 2xl:mt-5 mt-3 gap-4">
+          <button
+            class="bg-[#00A79D] hover:bg-teal-600 contact-btn2 text-white font-medium text-base h-12  transition duration-300">
+            Learn More
+          </button>
+          <button
+            class="border border-white contact-btn2 hover:bg-teal-600 text-white font-medium text-base h-12 justify-center transition duration-300 flex items-center gap-2">
+            Contact Us
+            <svg class="w-4 h-4" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+              <path d="M5 12h14m-7-7l7 7-7 7" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+            </svg>
+          </button>
+        </div>
+      </div>
+
+      <!-- Service Cards -->
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-4 md:gap-8 2xl:gap-20 xl:gap--12 xl:mt-10 lg:mt-6 mt-4">
+        <!-- Card 1 -->
+        <div class="2xl:p-12 xl:p-7 lg:p-6 md: p-2">
+          <div
+            class="w-12 md:w-14 h-12 md:h-14 xl:w-20 xl:h-20 bg-[#FFFFFF0A] border border-[#FFFFFF1A] flex items-center justify-center 2xl:mb-16 xl:mb-8 md:mb-5 mb-4">
+            <img class="md:w-10  w-8 " src="./assets/images/solution.svg" alt="Mobile Development" id="img2">
+
+          </div>
+          <h3 class="text-xl font-bold mb-1 2xl:mb-2">Customized Solutions for Every Business</h3>
+          <p class="text-teal-100 lg:text-base text-sm">
+            We have successfully delivered numerous Web3, Blockchain, and AI projects for our clients.
+          </p>
+        </div>
+
+        <!-- Card 2 -->
+        <div class="2xl:p-12 xl:p-7 lg:p-6 md: p-2">
+          <div
+            class="w-12 md:w-14 h-12 md:h-14 xl:w-20 xl:h-20 bg-[#FFFFFF0A] border border-[#FFFFFF1A] flex items-center justify-center 2xl:mb-16 xl:mb-8 md:mb-5 mb-4">
+            <img class="md:w-10  w-8 " src="./assets/images/Integration.svg" alt="Mobile Development" id="img2">
+          </div>
+          <h3 class="text-xl font-bold mb-1 2xl:mb-2">Seamless Integration and Scalability</h3>
+          <p class="text-teal-100 lg:text-base text-sm">
+            We have successfully delivered numerous Web3, Blockchain, and AI projects for our clients.
+          </p>
+        </div>
+
+        <!-- Card 3 -->
+        <div class="2xl:p-12 xl:p-7 lg:p-6 md: p-2">
+          <div
+            class="w-12 md:w-14 h-12 md:h-14 xl:w-20 xl:h-20 bg-[#FFFFFF0A] border border-[#FFFFFF1A] flex items-center justify-center 2xl:mb-16 xl:mb-8 md:mb-5 mb-4">
+            <img class="md:w-10  w-8 " src="./assets/images/Maintenance.svg" alt="Mobile Development" id="img2">
+
+          </div>
+          <h3 class="text-xl font-bold mb-1 2xl:mb-2">Reliable Support and Maintenance</h3>
+          <p class="text-teal-100 lg:text-base text-sm">
+            We have successfully delivered numerous Web3, Blockchain, and AI projects for our clients.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="relative min-h-screen overflow-hidden bg-gray-100">
+    <!-- Background Images -->
+    <img src="./assets/images/software-development.png" alt="Software Development" class="background-image active"
+      id="img1">
+    <img src="./assets/images/app-development.png" alt="Mobile Development" class="background-image" id="img2">
+    <img src="./assets/images/web-development.png" alt="Web Development" class="background-image" id="img3">
+
+    <!-- Content Overlay -->
+    <div class="relative z-10 container-fluid mx-auto px-4 lg:px-10 md:px-8 xl:py-10 py-6 h-screen">
+      <div class="grid lg:grid-cols-5 md:grid-cols-2 h-full">
+        <div class="lg:col-span-3 md md:inline-vlock hiddin w-[0px]">
+          <!-- Left space for background image -->
+        </div>
+        <div class="lg:col-span-2 md:col-span-2 w-full">
+          <div class="info-card md:p-5 p-3 flex flex-col justify-between h-100">
+            <h2 class="text-3xl lg:text-4xl xltext-6xl xl:text-5xl font-bold font-bold mb-6">
+              What we do</h2>
+
+            <div>
+              <p class="description xl:mt-10 text-gray-600 lg:text-base text-sm mb-0 text-base text-base ">
+                We build tailored software solutions to meet your unique business needs.
+                Our team of experienced developers will work closely with you to
+                understand your requirements and deliver high-quality, scalable software
+                applications.
+              </p>
+
+              <!-- Service Items -->
+              <div class="flex-grow">
+                <!-- Custom Software Development -->
+                <div class="service-item active" onclick="switchService(0)">
+                  <span class="service-number text-lg text-black">01</span>
+                  <span
+                    class="service-text font-bold text-black text-right text-base sm:text-xl mr-0 xl:text-2xl">Custom
+                    Software Development</span>
+                  <div class="service-icon">
+                    <svg class="w-5 h-5 text-white" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                        d="M20 12H4m0 0l6-6m-6 6l6 6" />
+                    </svg>
+                  </div>
+                </div>
+
+                <!-- Mobile App Development -->
+                <div class="service-item" onclick="switchService(1)">
+                  <span class="service-number text-lg text-black">02</span>
+                  <span
+                    class="service-text font-bold text-black text-right text-base sm:text-xl mr-0 xl:text-2xl">Mobile
+                    App Development</span>
+                  <div class="service-icon">
+                    <svg class="w-5 h-5 text-white" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                        d="M12 18h.01M8 21h8a2 2 0 002-2V5a2 2 0 00-2-2H8a2 2 0 00-2 2v14a2 2 0 002 2z" />
+                    </svg>
+                  </div>
+                </div>
+
+                <!-- Web Development -->
+                <div class="service-item" onclick="switchService(2)">
+                  <span class="service-number text-lg text-black">03</span>
+                  <span class="service-text font-bold text-black text-right text-base sm:text-xl mr-0 xl:text-2xl">Web
+                    Development</span>
+                  <div class="service-icon">
+                    <svg class="w-5 h-5 text-white" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                        d="M21 12a9 9 0 01-9 9m9-9a9 9 0 00-9-9m9 9H3m9 9a9 9 0 01-9-9m9 9c1.657 0 3-4.03 3-9s-1.343-9-3-9m0 18c-1.657 0-3-4.03-3-9s1.343-9 3-9m-9 9a9 9 0 019-9" />
+                    </svg>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="relative md:min-h-screen h-[100vh] overflow-hidden">
+    <!-- Background Images -->
+    <img src="./assets/images/tranform-banner.png" alt="Software Development" class="background-image2 md:block hidden"
+      id="img1">
+
+    <img src="./assets/images/mobile-banner.png" alt="Software Development"
+      class="background-image2 block md:hidden object-top" id="img1">
+
+    <!-- Center Content -->
+    <div class="container relative z-10 mx-auto px-4 h-[60vh] md:h-screen flex items-center justify-center">
+      <div class="text-center text-white max-w-3xl content-animate">
+        <h1 class="text-3xl lg:text-4xl xltext-6xl xl:text-5xl font-bold font-bold mb-6 mb-6 leading-tight">
+          Transform Your <br /> Business Today
+        </h1>
+        <p class="text-sm md:text-lg mb-8 text-white/80 md:w-[347px] mx-auto">
+          Discover how our innovative solutions can help your business thrive.
+        </p>
+        <div class="flex justify-center gap-4">
+          <button
+            class="bg-[#00C4B4] hover:bg-[#00B3A4] contact-btn2 text-white font-medium text-lg transition-colors duration-300">
+            Contact
+          </button>
+          <button
+            class="bg-white hover:bg-gray-100 text-teal-900 contact-btn2 font-medium text-lg transition-colors duration-300">
+            Learn More
+          </button>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section>
+    <!-- First Marquee (Left to Right) -->
+    <div class="marquee-container pt-8 mt-5 pb-3">
+      <div class="overlay-left"></div>
+      <div class="overlay-right"></div>
+      <div class="marquee-right">
+        <!-- First set of logos -->
+        <div class="marquee-item mx-2">
+          <img src="./assets/images/relume.svg" alt="Webflow"
+            class="w-[134px] grayscale hover:grayscale-0 transition-all">
+        </div>
+        <div class="marquee-item mx-2">
+          <img src="./assets/images/webflow.svg" alt="Relume"
+            class="w-[134px] grayscale hover:grayscale-0 transition-all">
+        </div>
+        <div class="marquee-item mx-2">
+          <img src="./assets/images/relume.svg" alt="Webflow"
+            class="w-[134px] grayscale hover:grayscale-0 transition-all">
+        </div>
+        <div class="marquee-item mx-2">
+          <img src="./assets/images/webflow.svg" alt="Relume"
+            class="w-[134px] grayscale hover:grayscale-0 transition-all">
+        </div>
+        <div class="marquee-item mx-2">
+          <img src="./assets/images/relume.svg" alt="Webflow"
+            class="w-[134px] grayscale hover:grayscale-0 transition-all">
+        </div>
+        <div class="marquee-item mx-2">
+          <img src="./assets/images/webflow.svg" alt="Relume"
+            class="w-[134px] grayscale hover:grayscale-0 transition-all">
+        </div>
+        <div class="marquee-item mx-2">
+          <img src="./assets/images/relume.svg" alt="Webflow"
+            class="w-[134px] grayscale hover:grayscale-0 transition-all">
+        </div>
+
+        <!-- Duplicated set for seamless loop -->
+        <div class="marquee-item mx-2">
+          <img src="./assets/images/webflow.svg" alt="Relume"
+            class="w-[134px] grayscale hover:grayscale-0 transition-all">
+        </div>
+        <div class="marquee-item mx-2">
+          <img src="./assets/images/relume.svg" alt="Relume"
+            class="w-[134px] grayscale hover:grayscale-0 transition-all">
+        </div>
+        <div class="marquee-item mx-2">
+          <img src="./assets/images/webflow.svg" alt="Relume"
+            class="w-[134px] grayscale hover:grayscale-0 transition-all">
+        </div>
+        <div class="marquee-item mx-2">
+          <img src="./assets/images/relume.svg" alt="Relume"
+            class="w-[134px] grayscale hover:grayscale-0 transition-all">
+        </div>
+        <div class="marquee-item mx-2">
+          <img src="./assets/images/webflow.svg" alt="Relume"
+            class="w-[134px] grayscale hover:grayscale-0 transition-all">
+        </div>
+        <div class="marquee-item mx-2">
+          <img src="./assets/images/relume.svg" alt="Relume"
+            class="w-[134px] grayscale hover:grayscale-0 transition-all">
+        </div>
+        <div class="marquee-item mx-2">
+          <img src="./assets/images/webflow.svg" alt="Relume"
+            class="w-[134px] grayscale hover:grayscale-0 transition-all">
+        </div>
+      </div>
+    </div>
+
+    <!-- Second Marquee (Right to Left) -->
+    <div class="marquee-container pb-8 pt-3">
+      <div class="overlay-left"></div>
+      <div class="overlay-right"></div>
+      <div class="marquee-left">
+        <!-- First set of logos -->
+        <div class="marquee-item mx-2">
+          <img src="./assets/images/relume.svg" alt="Webflow"
+            class="w-[134px] grayscale hover:grayscale-0 transition-all">
+        </div>
+        <div class="marquee-item mx-2">
+          <img src="./assets/images/webflow.svg" alt="Relume"
+            class="w-[134px] grayscale hover:grayscale-0 transition-all">
+        </div>
+        <div class="marquee-item mx-2">
+          <img src="./assets/images/relume.svg" alt="Webflow"
+            class="w-[134px] grayscale hover:grayscale-0 transition-all">
+        </div>
+        <div class="marquee-item mx-2">
+          <img src="./assets/images/webflow.svg" alt="Relume"
+            class="w-[134px] grayscale hover:grayscale-0 transition-all">
+        </div>
+        <div class="marquee-item mx-2">
+          <img src="./assets/images/relume.svg" alt="Webflow"
+            class="w-[134px] grayscale hover:grayscale-0 transition-all">
+        </div>
+        <div class="marquee-item mx-2">
+          <img src="./assets/images/webflow.svg" alt="Relume"
+            class="w-[134px] grayscale hover:grayscale-0 transition-all">
+        </div>
+        <div class="marquee-item mx-2">
+          <img src="./assets/images/relume.svg" alt="Webflow"
+            class="w-[134px] grayscale hover:grayscale-0 transition-all">
+        </div>
+
+        <!-- Duplicated set for seamless loop -->
+        <div class="marquee-item mx-2">
+          <img src="./assets/images/webflow.svg" alt="Relume"
+            class="w-[134px] grayscale hover:grayscale-0 transition-all">
+        </div>
+        <div class="marquee-item mx-2">
+          <img src="./assets/images/relume.svg" alt="Relume"
+            class="w-[134px] grayscale hover:grayscale-0 transition-all">
+        </div>
+        <div class="marquee-item mx-2">
+          <img src="./assets/images/webflow.svg" alt="Relume"
+            class="w-[134px] grayscale hover:grayscale-0 transition-all">
+        </div>
+        <div class="marquee-item mx-2">
+          <img src="./assets/images/relume.svg" alt="Relume"
+            class="w-[134px] grayscale hover:grayscale-0 transition-all">
+        </div>
+        <div class="marquee-item mx-2">
+          <img src="./assets/images/webflow.svg" alt="Relume"
+            class="w-[134px] grayscale hover:grayscale-0 transition-all">
+        </div>
+        <div class="marquee-item mx-2">
+          <img src="./assets/images/relume.svg" alt="Relume"
+            class="w-[134px] grayscale hover:grayscale-0 transition-all">
+        </div>
+        <div class="marquee-item mx-2">
+          <img src="./assets/images/webflow.svg" alt="Relume"
+            class="w-[134px] grayscale hover:grayscale-0 transition-all">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="py-7 lg:py-12 md:py-8 lg:flex items-center lg:h-screen">
+    <div class="container-fluid mx-auto px-4 xl:px-20 lg:px-10 md:px-8">
+      <!-- Desktop Layout -->
+      <div class="hidden md:flex content-wrapper">
+        <!-- Left Side - Image -->
+        <div class="w-1/2 flex justify-center relative">
+          <img src="./assets/images/expri.png" alt="Team working" class="lg:h-full md:h-[65%] h-[50%] object-cover">
+        </div>
+
+        <!-- Right Side - Content -->
+        <div class="w-1/2 flex flex-col py-5 md:py-0 lg:justify-between">
+          <div class="xl:w-[600px] ">
+            <h2 class="text-3xl lg:text-4xl xltext-6xl xl:text-5xl font-bold leading-tight mb-6">
+              Experience the Power of our Innovative Solutions and Cutting-Edge Technology
+            </h2>
+            <p class="text-gray-600 lg:text-base text-sm lg:mb-12 mb-3">
+              With over 20 years of experience, Solved, has been at the forefront of software development,
+              specializing in startups. Our team of experts has successfully built applications, developed
+              mobile solutions, and implemented Web3, Blockchain, and AI projects.
+            </p>
+          </div>
+
+          <!-- Stats Grid -->
+          <div class="grid grid-cols-2 gap-8">
+            <!-- Growth Stat -->
+            <div>
+              <h3 class="xl:text-3xl text-xl font-bold mb-2">50% Growth</h3>
+              <p class="text-gray-600 lg:text-base text-sm">Increase in Revenue for Our Clients</p>
+            </div>
+            <!-- Satisfaction Stat -->
+            <div>
+              <h3 class="xl:text-3xl text-xl font-bold mb-2">50% Satisfaction</h3>
+              <p class="text-gray-600 lg:text-base text-sm">Positive Feedback from Happy Clients</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Mobile Layout -->
+      <div class="md:hidden flex flex-col">
+        <!-- Content -->
+        <div class="mb-8">
+          <h2 class="text-3xl font-bold leading-tight xl:mb-3 mb-2">
+            Experience the Power of our Innovative Solutions and Cutting-Edge Technology
+          </h2>
+          <p class="text-gray-600 lg:text-base text-sm mb-8">
+            With over 20 years of experience, Solved, has been at the forefront of software development,
+            specializing in startups. Our team of experts has successfully built applications, developed
+            mobile solutions, and implemented Web3, Blockchain, and AI projects.
+          </p>
+        </div>
+
+        <!-- Stats Grid -->
+        <div class="grid grid-cols-1 gap-6 mb-8">
+          <!-- Growth Stat -->
+          <div>
+            <h3 class="lg:text-3xl font-bold mb-2 text-2xl">50% Growth</h3>
+            <p class="text-gray-600 lg:text-base text-sm">Increase in Revenue for Our Clients</p>
+          </div>
+          <!-- Satisfaction Stat -->
+          <div>
+            <h3 class="lg:text-3xl font-bold mb-2 text-2xl">50% Satisfaction</h3>
+            <p class="text-gray-600 lg:text-base text-sm">Positive Feedback from Happy Clients</p>
+          </div>
+        </div>
+
+        <!-- Image -->
+        <div class="relative">
+          <img src="./assets/images/expri.png" alt="Team working" class="w-full h-[300px] object-cover">
+
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="py-7 md:py-12 lg:h-screen lg:flex items-center">
+    <div class="container-fluid mx-auto px-4 xl:px-20 lg:px-10 md:px-8">
+      <!-- Top Section -->
+      <div class="flex flex-col md:flex-row justify-between mb-10 gap-8">
+        <!-- Left Side -->
+        <div class="lg:w-2/3 md:w-1/2">
+          <div
+            class="inline-flex justify-center items-center px-4 h-8 bg-[#00A74F] text-white font-medium rounded-full text-sm mb-6">
+            Innovate
+          </div>
+          <h2 class="text-3xl lg:text-4xl xltext-6xl xl:text-5xl font-bold mb-6">
+            Get in Touch
+          </h2>
+          <p class="text-gray-600 lg:text-base text-sm xl:w-[548px]">
+            Solved, has a global presence with offices in multiple locations.
+          </p>
+        </div>
+
+        <!-- Right Side - Contact Info -->
+        <div class="lg:w-1/3  md:w-1/2 space-y-8">
+          <!-- Email -->
+          <div class="flex items-center gap-4">
+            <div class="xl:w-[60px] xl:h-[60px] w-10 h-10 bg-[#00A79D]  flex items-center justify-center flex-shrink-0">
+              <img class="w-6" src="./assets/images/inbox.svg" alt="Mobile Development" id="img2">
+
+            </div>
+            <div>
+              <h3 class="font-bold xl:text-xl text-lg">Email</h3>
+              <a class="text-gray-600 lg:text-base text-sm md:text-base text-sm" href="mailto:info@solved.com"
+                class="text-gray-600 lg:text-base text-sm">
+                info@solved.com
+              </a>
+            </div>
+          </div>
+
+          <!-- Phone -->
+          <div class="flex items-center gap-4">
+            <div
+              class="xl:w-[60px] xl:h-[60px] w-10 h-10  bg-green-500  flex items-center justify-center flex-shrink-0">
+              <img class="w-6" src="./assets/images/phone.svg" alt="Mobile Development" id="img2">
+
+            </div>
+            <div>
+              <h3 class="font-bold xl:text-xl text-lg">Phone</h3>
+              <a class="text-gray-600 lg:text-base text-sm md:text-base text-base" href="tel:+1555123-4567"
+                class="text-gray-600 lg:text-base text-sm">
+                +1 (555) 123-4567
+              </a>
+            </div>
+          </div>
+
+          <!-- Office -->
+          <div class="flex items-center gap-4">
+            <div
+              class="xl:w-[60px] xl:h-[60px] w-10 h-10  bg-orange-500  flex items-center justify-center flex-shrink-0">
+              <img class="w-6" src="./assets/images/map.svg" alt="Mobile Development" id="img2">
+
+            </div>
+            <div>
+              <h3 class="font-bold xl:text-xl text-lg">Office</h3>
+              <p class="text-gray-600 lg:text-base text-sm md:text-base text-sm ">
+                123 Main St, Sydney NSW 2000, Australia
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Map -->
+      <div class="overflow-hidden xl:h-[280px] 2xl:h-[400px] lg:h-[270px] md:h-[200px] h-[180px]">
+        <iframe class="xl:h-[280px] 2xl:h-[400px] lg:h-[270px] h-[250px]"
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3312.4700791925155!2d151.20442841521!3d-33.87029242665476!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6b12ae401e8b983f%3A0x5017d681632ccc0!2sSydney%20NSW%202000%2C%20Australia!5e0!3m2!1sen!2sus!4v1635959773522!5m2!1sen!2sus"
+          width="100%" style="border:0;" allowfullscreen="" loading="lazy">
+        </iframe>
+      </div>
+    </div>
+  </section>
+  <!-- footer -->
+  <section class="lg:h-screen">
+    <footer class="bg-white pt-2 2xl:pt-4 xl:pt-2 pb-3 ">
+      <div class="container-fluid mx-auto px-4 xl:px-20 lg:px-10 md:px-8">
+        <!-- Top Section -->
+        <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+          <!-- Social & Language -->
+          <div class="space-y-8 md:col-span-2">
+            <div>
+              <h3 class="font-semibold footer-font text-base mb-4">Social</h3>
+              <div class="flex gap-2">
+                <a href="#"
+                  class="w-12 h-12 inline-flex justify-center items-center bg-white border border-[#DADADA] rounded-full">
+                  <img class="w-6" src="./assets/images/Facebook.svg" alt="Mobile Development" id="img2">
+                </a>
+                <a href="#"
+                  class="w-12 h-12 inline-flex justify-center items-center bg-white border border-[#DADADA] rounded-full">
+                  <img class="w-6" src="./assets/images/Instagram.svg" alt="Mobile Development" id="img2">
+
+                </a>
+                <a href="#"
+                  class="w-12 h-12 inline-flex justify-center items-center bg-white border border-[#DADADA] rounded-full">
+                  <img class="w-6" src="./assets/images/X.svg" alt="Mobile Development" id="img2">
+
+                </a>
+                <a href="#"
+                  class="w-12 h-12 inline-flex justify-center items-center bg-white border border-[#DADADA] rounded-full">
+                  <img class="w-6" src="./assets/images/LinkedIn.svg" alt="Mobile Development" id="img2">
+
+                </a>
+              </div>
+            </div>
+            <div>
+              <h3 class="font-semibold footer-font text-base 2xl:mb-3 mb-1">Language</h3>
+              <div class="w-auto inline-block bg-[#FAFAFA] border border-gray-400">
+                <div class="flex">
+                  <a href=""
+                    class="language-btn bg-[#FAFAFA] rounded-0 h-12 w-12  active inline-flex items-center">EN</a>
+                  <a href="" class="language-btn bg-[#FAFAFA] rounded-0 h-12 w-12 inline-flex items-center">AR</a>
+                  <a href="" class="language-btn bg-[#FAFAFA] rounded-0 h-12 w-12 inline-flex items-center">ES</a>
+                  <a href="" class="language-btn bg-[#FAFAFA] rounded-0 h-12 w-12 inline-flex items-center">FR</a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Partners -->
+          <div>
+            <h3 class="font-semibold footer-font text-base 2xl:mb-3 mb-1">Partners</h3>
+            <ul class="2xl:space-y-2 space-y-1">
+              <li><a href="#" class="text-black hover:text-gray-900">Services</a></li>
+              <li><a href="#" class="text-black hover:text-gray-900">Products</a></li>
+              <li><a href="#" class="text-black hover:text-gray-900">Contact Us</a></li>
+              <li><a href="#" class="text-black hover:text-gray-900">Support</a></li>
+              <li><a href="#" class="text-black hover:text-gray-900">Blog</a></li>
+            </ul>
+          </div>
+
+          <!-- About Us -->
+          <div>
+            <h3 class="font-semibold 2xl:mb-3 mb-1 footer-font">About Us</h3>
+            <ul class="2xl:space-y-2 space-y-1">
+              <li><a href="#" class="text-black hover:text-gray-900">Resources</a></li>
+              <li><a href="#" class="text-black hover:text-gray-900">FAQs</a></li>
+              <li><a href="#" class="text-black hover:text-gray-900">Support Center</a></li>
+              <li><a href="#" class="text-black hover:text-gray-900">Terms & Conditions</a></li>
+              <li><a href="#" class="text-black hover:text-gray-900">Privacy Policy</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <!-- Logo & Copyright -->
+      <div class="pt-0">
+        <div class="footer-logo mb-1">
+          <img src="./assets/images/footer-logo.svg" class=" w-full" />
+        </div>
+      </div>
+      </div>
+      <div class="container-fliud mx-auto px-4 xl:px-20 lg:px-10 md:px-8">
+        <div class="flex flex-col md:flex-row justify-between items-center gap-4">
+          <div class="text-sm text-black">
+            © 2023 Solved. All rights reserved.
+          </div>
+          <div class="flex gap-6 text-sm text-black">
+            <a href="#" class="hover:text-black">Privacy Policy</a>
+            <a href="#" class="hover:text-black">Terms of Service</a>
+            <a href="#" class="hover:text-black">Cookie Settings</a>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </section>
+  <script>
+    // Mobile menu functionality
+    const menuBtn = document.getElementById('menuBtn');
+    const mobileMenu = document.getElementById('mobileMenu');
+    const closeMenu = document.getElementById('closeMenu');
+    const mobileProdBtn = document.getElementById('mobileProdBtn');
+    const mobileProdMenu = document.getElementById('mobileProdMenu');
+    const mobileLangBtn = document.getElementById('mobileLangBtn');
+    const mobileLangMenu = document.getElementById('mobileLangMenu');
+
+    menuBtn.addEventListener('click', () => {
+      mobileMenu.classList.add('show');
+      document.body.style.overflow = 'hidden';
+    });
+
+    closeMenu.addEventListener('click', () => {
+      mobileMenu.classList.remove('show');
+      document.body.style.overflow = 'auto';
+    });
+
+    mobileProdBtn.addEventListener('click', () => {
+      mobileProdMenu.classList.toggle('hidden');
+    });
+
+    mobileLangBtn.addEventListener('click', () => {
+      mobileLangMenu.classList.toggle('hidden');
+    });
+
+    // Desktop dropdowns functionality
+    function setupDropdown(btnId, menuId) {
+      const btn = document.getElementById(btnId);
+      const menu = document.getElementById(menuId);
+      let isOpen = false;
+
+      btn.addEventListener('click', (e) => {
+        e.stopPropagation();
+        isOpen = !isOpen;
+        if (isOpen) {
+          document.querySelectorAll('.dropdown-menu, .lang-dropdown-menu').forEach(m => {
+            m.classList.remove('show');
+          });
+          menu.classList.add('show');
+        } else {
+          menu.classList.remove('show');
+        }
+      });
+
+      return { menu, setIsOpen: (value) => isOpen = value };
+    }
+
+    const products = setupDropdown('dropdownBtn', 'dropdownMenu');
+    const lang = setupDropdown('langBtn', 'langMenu');
+
+    document.addEventListener('click', (e) => {
+      if (!e.target.closest('.dropdown-menu') && !e.target.closest('#dropdownBtn') &&
+        !e.target.closest('.lang-dropdown-menu') && !e.target.closest('#langBtn')) {
+        document.querySelectorAll('.dropdown-menu, .lang-dropdown-menu').forEach(menu => {
+          menu.classList.remove('show');
+        });
+        products.setIsOpen(false);
+        lang.setIsOpen(false);
+      }
+    });
+
+    document.addEventListener('keydown', (e) => {
+      if (e.key === 'Escape') {
+        mobileMenu.classList.remove('show');
+        document.body.style.overflow = 'auto';
+        document.querySelectorAll('.dropdown-menu, .lang-dropdown-menu').forEach(menu => {
+          menu.classList.remove('show');
+        });
+        products.setIsOpen(false);
+        lang.setIsOpen(false);
+      }
+    });
+
+    // Language selection
+    function setupLangSelection(menuId, btnId) {
+      document.querySelectorAll(`#${menuId} button`).forEach(btn => {
+        btn.addEventListener('click', () => {
+          const langCode = btn.textContent.slice(0, 2);
+          document.getElementById(btnId).textContent = `${langCode} ▼`;
+          if (menuId === 'langMenu') {
+            document.getElementById(menuId).classList.remove('show');
+            lang.setIsOpen(false);
+          } else {
+            document.getElementById(menuId).classList.add('hidden');
+          }
+        });
+      });
+    }
+
+    setupLangSelection('langMenu', 'langBtn');
+    setupLangSelection('mobileLangMenu', 'mobileLangBtn');
+
+    const serviceItems = document.querySelectorAll('.service-item');
+    const images = document.querySelectorAll('.background-image');
+
+    function switchService(index) {
+      // Update service items
+      serviceItems.forEach((item, i) => {
+        if (i === index) {
+          item.classList.add('active');
+        } else {
+          item.classList.remove('active');
+        }
+      });
+
+      // Update images
+      images.forEach((image, i) => {
+        if (i === index) {
+          image.classList.add('active');
+        } else {
+          image.classList.remove('active');
+        }
+      });
+    }
+
+    // Initialize first service
+    switchService(0);
+
+    // Track current section and scrolling state
+    let currentSection = 0;
+    let isScrolling = false;
+    let isFullPageScrollEnabled = false;
+    const sections = document.querySelectorAll('section');
+    const totalSections = sections.length;
+
+    // Function to check if device is large screen
+    function isLargeScreen() {
+      return window.innerWidth >= 1024; // lg breakpoint
+    }
+
+    // Function to scroll to a specific section
+    function scrollToSection(index) {
+      if (index >= 0 && index < totalSections && !isScrolling && isFullPageScrollEnabled) {
+        isScrolling = true;
+        currentSection = index;
+
+        // Scroll to the section
+        sections[index].scrollIntoView({ behavior: 'smooth' });
+
+        // Reset scrolling flag after animation
+        setTimeout(() => {
+          isScrolling = false;
+        }, 1000);
+      }
+    }
+
+    // Handle mouse wheel scrolling
+    function handleWheel(event) {
+      if (!isFullPageScrollEnabled) return;
+
+      event.preventDefault();
+
+      if (!isScrolling) {
+        if (event.deltaY > 0 && currentSection < totalSections - 1) {
+          // Scroll down
+          scrollToSection(currentSection + 1);
+        } else if (event.deltaY < 0 && currentSection > 0) {
+          // Scroll up
+          scrollToSection(currentSection - 1);
+        }
+      }
+    }
+
+    // Handle keyboard navigation
+    function handleKeydown(event) {
+      if (!isFullPageScrollEnabled) return;
+
+      if (event.key === 'ArrowDown' || event.key === 'PageDown') {
+        event.preventDefault();
+        if (currentSection < totalSections - 1) {
+          scrollToSection(currentSection + 1);
+        }
+      } else if (event.key === 'ArrowUp' || event.key === 'PageUp') {
+        event.preventDefault();
+        if (currentSection > 0) {
+          scrollToSection(currentSection - 1);
+        }
+      }
+    }
+
+    // Handle touch events for mobile
+    let touchStartY = 0;
+    let touchEndY = 0;
+
+    function handleTouchStart(event) {
+      if (!isFullPageScrollEnabled) return;
+      touchStartY = event.touches[0].clientY;
+    }
+
+    function handleTouchMove(event) {
+      if (!isFullPageScrollEnabled) return;
+      touchEndY = event.touches[0].clientY;
+    }
+
+    function handleTouchEnd() {
+      if (!isFullPageScrollEnabled) return;
+
+      const diff = touchStartY - touchEndY;
+      const minSwipeLength = 50;
+
+      if (Math.abs(diff) > minSwipeLength) {
+        if (diff > 0 && currentSection < totalSections - 1) {
+          // Swipe up - go to next section
+          scrollToSection(currentSection + 1);
+        } else if (diff < 0 && currentSection > 0) {
+          // Swipe down - go to previous section
+          scrollToSection(currentSection - 1);
+        }
+      }
+    }
+
+    // Function to enable/disable fullpage scroll based on screen size
+    function toggleFullPageScroll() {
+      isFullPageScrollEnabled = isLargeScreen();
+
+      if (isFullPageScrollEnabled) {
+        document.body.style.overflow = 'hidden';
+      } else {
+        document.body.style.overflow = 'auto';
+      }
+    }
+
+    // Initialize fullpage scroll
+    function initFullPageScroll() {
+      // Add section indices
+      sections.forEach((section, index) => {
+        section.setAttribute('data-section-index', index);
+      });
+
+      // Add event listeners
+      window.addEventListener('wheel', handleWheel, { passive: false });
+      window.addEventListener('keydown', handleKeydown);
+      document.addEventListener('touchstart', handleTouchStart);
+      document.addEventListener('touchmove', handleTouchMove);
+      document.addEventListener('touchend', handleTouchEnd);
+
+      // Handle resize events
+      window.addEventListener('resize', debounce(toggleFullPageScroll, 250));
+
+      // Initial setup
+      toggleFullPageScroll();
+    }
+
+    // Debounce function to prevent excessive resize calculations
+    function debounce(func, wait) {
+      let timeout;
+      return function executedFunction(...args) {
+        const later = () => {
+          clearTimeout(timeout);
+          func(...args);
+        };
+        clearTimeout(timeout);
+        timeout = setTimeout(later, wait);
+      };
+    }
+
+    // Initialize when DOM is loaded
+    document.addEventListener('DOMContentLoaded', initFullPageScroll);
+
+    // Add CSS for smooth transitions
+    const style = document.createElement('style');
+    style.textContent = `
+  @media (min-width: 1024px) {
+    html, body {
+      scroll-behavior: smooth;
+    }
+    section {
+      scroll-snap-align: start;
+    }
+  }
+`;
+    document.head.appendChild(style);
+  </script>
+</body>
+
+</html>
